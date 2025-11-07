@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="森ひとみのkiwi作品ページです。">
+    <link rel="icon" href="kiwi/kiwi9.png"> 
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>The Kiwi Named Gurasan| Hitomi Mori</title>
+    
+    <!-- Lightbox用CSS -->
+    <style>
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            padding: 1em;
+            background: rgba(0,0,0,0.8);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+                }
+
+        /* ←ここを追加 */
+        .lightbox:target {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* これを追加してみて */
+        .lightbox a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .lightbox img {
+            max-width: 70%;
+            max-height: 70%;
+            border-radius: 30px;
+        }
+
+        .lightbox:target { display: flex; }
+        .creations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+        }
+        .creation-card img {
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .creation-card img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+
+</head>
+
+<header class="top-bg creations-bg">
+        <h1 class="floating-text">
+            <span>H</span><span>i</span><span>t</span><span>o</span><span>m</span><span>i</span>
+            <span> </span>
+            <span>M</span><span>o</span><span>r</span><span>i</span>
+            <span> </span>
+            <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+        </h1>
+
+        <nav class="bottom-nav">
+            <a href="index.html">🏠 Home</a>
+            <a href="me.html">☕ ME</a>
+            <a href="contact.html">📩 Contact</a>
+        </nav>
+    </header>
+<body>
+    
+    
+
+   <main>
+    <h2>The Kiwi Named Gurasan</h2>
+
+    <!-- 作品グリッド -->
+    <section class="creations-grid">
+        <div class="creation-card">
+            <a href="#kiwi1"><img src="kiwi/kiwi1.png" alt="私はグラサン"></a>
+            <h3>私はグラサン</h3>
+        </div>
+        <div class="creation-card">
+            <a href="#kiwi2"><img src="kiwi/kiwi2.png" alt="グラサンのいいね！"></a>
+            <h3>グラサンのいいね！</h3>
+        </div>
+        <div class="creation-card">
+            <a href="#kiwi3"><img src="kiwi/kiwi3.png" alt="走るグラサン"></a>
+            <h3>走るグラサン</h3>
+        </div>
+        <div class="creation-card">
+            <a href="#kiwi4"><img src="kiwi/kiwi4.png" alt="喜び全開グラサン"></a>
+            <h3>喜び全開グラサン</h3>
+        </div>
+        <div class="creation-card">
+            <a href="#kiwi6"><img src="kiwi/kiwi6.png" alt="爆睡グラサン"></a>
+            <h3>爆睡グラサン💤</h3>
+        </div>
+        <div class="creation-card">
+            <a href="#kiwi7"><img src="kiwi/kiwi7.png" alt="びっくりグラサン"></a>
+            <h3>びっくりグラサン</h3>
+        </div>
+        <div class="creation-card">
+            <a href="#kiwi8"><img src="kiwi/kiwi8.png" alt="涙のグラサン"></a>
+            <h3>涙のグラサン</h3>
+        </div>
+        <div class="creation-card">
+            <a href="#kiwi9"><img src="kiwi/kiwi9.png" alt="大あくびグラサン"></a>
+            <h3>大あくびグラサン</h3>
+        </div>
+        <div class="creation-card">
+            <a href="#kiwi10"><img src="kiwi/kiwi10.png" alt="照れるグラサン"></a>
+            <h3>照れるグラサン</h3>
+        </div>
+        <div class="creation-card">
+            <a href="#kiwi11"><img src="kiwi/kiwi11.png" alt="悔しいグラサン"></a>
+            <h3>悔しいグラサン</h3>
+        </div>
+    </section>
+
+    <!-- Lightbox部分 -->
+    <div class="lightbox" id="kiwi1">
+        <a href="#"><img src="./creations/kiwi/kiwi1.png" alt="私はグラサン"></a>
+    </div>
+    <div class="lightbox" id="kiwi2">
+        <a href="#"><img src="./creations/kiwi/kiwi2.png" alt="グラサンのいいね！"></a>
+    </div>
+    <div class="lightbox" id="kiwi3">
+        <a href="#"><img src="./creations/kiwi/kiwi3.png" alt="走るグラサン"></a>
+    </div>
+    <div class="lightbox" id="kiwi4">
+        <a href="#"><img src="./creations/kiwi/kiwi4.png" alt="喜び全開グラサン"></a>
+    </div>
+    <div class="lightbox" id="kiwi6">
+        <a href="#"><img src="./creations/kiwi/kiwi6.png" alt="爆睡グラサン"></a>
+    </div>
+    <div class="lightbox" id="kiwi7">
+        <a href="#"><img src="./creations/kiwi/kiwi7.png" alt="びっくりグラサン"></a>
+    </div>
+    <div class="lightbox" id="kiwi8">
+        <a href="#"><img src="./creations/kiwi/kiwi8.png" alt="涙のグラサン"></a>
+    </div>
+    <div class="lightbox" id="kiwi9">
+        <a href="#"><img src="./creations/kiwi/kiwi9.png" alt="大あくびグラサン"></a>
+    </div>
+    <div class="lightbox" id="kiwi10">
+        <a href="#"><img src="./creations/kiwi/kiwi10.png" alt="照れるグラサン"></a>
+    </div>
+    <div class="lightbox" id="kiwi11">
+        <a href="#"><img src="./creations/kiwi/kiwi11.png" alt="悔しいグラサン"></a>
+    </div>
+
+    <!-- Instagram・ブログボタン -->
+    <div class="inline-buttons">
+        <a href="https://www.instagram.com/yumeuta_tane/" target="_blank">Instagram</a>
+        <a href="http://m8065.wordpress.com" target="_blank">Blog</a>
+    </div>
+        </section>
+
+
+            <div class="inline-buttons">
+                <a href="index.html">🏠 Home</a>
+                <a href="me.html">☕ ME</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ☕🔬 Hii-chan Lab 📓🧪</p>
+    </footer>
+
+</body>
+</html>
