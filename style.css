@@ -160,7 +160,7 @@
 
     /* ------------------ Creations ------------------ */
         .creations-bg {
-            background: url(./images/creation-top-bg.png) center / cover no-repeat;
+            background: url(kiwi/creation-top-bg.png) center / cover no-repeat;
             height: 40vh;
             position: relative;
         }
@@ -303,4 +303,5 @@
             grid-template-columns: 1fr; /* スマホでは1列 */
         }
     }
+
 
