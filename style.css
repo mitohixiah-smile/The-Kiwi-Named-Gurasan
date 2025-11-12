@@ -295,7 +295,23 @@
 
     /* ------------------ レスポンシブ ------------------ */
     @media screen and (max-width: 768px) {
-        .bottom-nav { flex-direction: column; gap: 1rem; }
+    .bottom-nav {
+        flex-direction: row;  /* ←縦じゃなく横並び */
+        gap: 1rem;
+        bottom: 8%;  /* 少し上に配置（数字は調整OK） */
+    }
+
+    .bottom-nav a {
+        padding: 0.7rem 1rem;  /* ←ボタンを小さく */
+        font-size: 1rem;       /* ←文字サイズも控えめに */
+        border-radius: 50%;    /* ←丸型のまま */
+    }
+
+    .floating-text {
+        top: 25%; /* ←少し上げて重なり防止 */
+        font-size: clamp(1.5rem, 7vw, 3rem);
+    }
+}
         .floating-text { font-size: clamp(1.5rem, 8vw, 3rem); }
         .about-me .me-card { flex-direction: column; text-align: center; }
         .about-me .me-card img { margin-bottom: 1rem; }
@@ -303,5 +319,6 @@
             grid-template-columns: 1fr; /* スマホでは1列 */
         }
     }
+
 
 
